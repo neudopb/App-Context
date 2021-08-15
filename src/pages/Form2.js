@@ -1,23 +1,17 @@
-import React, {useState} from 'react';
-import { View, Text, Keyboard } from 'react-native';
+import React, { useContext } from 'react';
+import { View, Keyboard } from 'react-native';
 import GlobalStyle from '../styles/GlobalStyle';
 import { MyInput } from '../components/MyInput';
 import { MyButton } from '../components/MyButton';
+import SimplesContext from '../contexts/SimplesProvider';
 
 export function Form2({ navigation }) {
 
-    const[escolaridade, setEscolaridade] = useState('');
-    const[idioma, setIdioma] = useState('');
-    const[experiencia, setExperiencia] = useState('');
+    const { escolaridade, setEscolaridade, idioma, setIdioma, experiencia, setExperiencia } = useContext(SimplesContext);
 
     function nextPage() {
         if (escolaridade && idioma && experiencia) {
-            
-            setEscolaridade('');
-            setIdioma('');
-            setExperiencia('');
             Keyboard.dismiss();
-
             navigation.navigate('Read');
         }
     }

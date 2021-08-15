@@ -9,6 +9,8 @@ export function MyInput(props) {
             placeholderTextColor={'#B2B2B2'}
             onChangeText={props.onChangeText}
             value={props.value}
+            keyboardType={props.keyboardType}
+            { ...props }
         />
     );
 };
