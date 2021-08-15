@@ -5,9 +5,7 @@ import { MyData } from '../components/MyData';
 
 export function Read() {
     return (
-        <View style={GlobalStyle.container}>
-            <Text style={GlobalStyle.titulo}>RESUMO DOS DADOS</Text>
-            
+        <View style={GlobalStyle.container}>           
             <MyData label="NOME" value="" />
             <MyData label="CPF" value="" />
             <MyData label="EMAIL" value="" />

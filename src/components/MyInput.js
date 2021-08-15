@@ -15,14 +15,14 @@ export function MyInput(props) {
 
 const styles = StyleSheet.create({
     input: {
-        width: '75%',
-        height: 50,
+        width: '80%',
+        height: 60,
         borderRadius: 10,
-        margin: 5,
+        margin: 10,
         paddingLeft: 20,
         fontSize: 18,
         borderWidth: 1,
-        borderColor: '#B2B2B2',
+        borderColor: '#00ffff',
         backgroundColor: '#FFFFFF',
     },
 });

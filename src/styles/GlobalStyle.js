@@ -5,18 +5,6 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#D1D1D1'
+        backgroundColor: '#8cf2d0'
     },
-    tema: {
-        fontSize: 27,
-        transform: [{translateY:-75}],
-        fontWeight: 'bold',
-        textDecorationLine: 'underline',
-    },
-    titulo: {
-        fontSize: 22,
-        margin: 30,
-        fontWeight: 'bold',
-        fontStyle: 'italic',
-    }
 });

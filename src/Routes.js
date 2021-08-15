@@ -9,9 +9,27 @@ const Stack = createStackNavigator();
 export function Routes() {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Home" component={ Home } options={{ headerShown: false }} />
-            <Stack.Screen name="Form2" component={ Form2 } options={{ headerShown: false }} />
-            <Stack.Screen name="Read" component={ Read } options={{ headerShown: false }} />
+            <Stack.Screen name="Home" component={ Home } 
+                options={{ 
+                    title: "DADOS PESSOAIS", headerTitleStyle: {
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                    },
+                }} />
+            <Stack.Screen name="Form2" component={ Form2 } 
+                options={{ 
+                    title: "DADOS PROFISSIONAIS", headerTitleStyle: {
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                    },
+                }} />
+            <Stack.Screen name="Read" component={ Read } 
+                options={{
+                    title: "RESUMO DOS DADOS", headerTitleStyle: {
+                        fontSize: 25,
+                        fontWeight: 'bold',
+                    },
+                }} />
         </Stack.Navigator>
     );
 };

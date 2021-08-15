@@ -24,11 +24,9 @@ export function Form2({ navigation }) {
 
     return (
         <View style={GlobalStyle.container}>
-            <Text style={GlobalStyle.titulo}>DADOS PROFISSIONAIS</Text>
-
-            <MyInput placeholder="Escolaridade" value={escolaridade} onChangeText={setEscolaridade} />
-            <MyInput placeholder="Idiomas" value={idioma} onChangeText={setIdioma} />
-            <MyInput placeholder="Experiência" value={experiencia} onChangeText={setExperiencia} />
+            <MyInput placeholder="Informe sua Escolaridade" value={escolaridade} onChangeText={setEscolaridade} />
+            <MyInput placeholder="Informe seus Idiomas" value={idioma} onChangeText={setIdioma} />
+            <MyInput placeholder="Informe sua Experiência" value={experiencia} onChangeText={setExperiencia} />
 
             <MyButton onPress={ () => nextPage() } placeholder="Salvar" />
         </View>

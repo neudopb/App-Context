@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         borderRadius: 7,
         borderColor: '#B2B2B2',
         padding: 3,
-        margin: 7,
+        margin: 15,
     },
     txtLabel: {
         fontSize: 20,

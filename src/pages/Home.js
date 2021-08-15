@@ -24,12 +24,9 @@ export function Home({ navigation }){
 
     return (
         <View style={GlobalStyle.container}>
-            <Text style={GlobalStyle.tema}>CADASTRO COM CONTEXT</Text>
-            <Text style={GlobalStyle.titulo}>DADOS PESSOAIS</Text>
-
-            <MyInput placeholder="Nome" value={nome} onChangeText={setNome} />
-            <MyInput placeholder="CPF" value={cpf} onChangeText={setCpf} />
-            <MyInput placeholder="E-mail" value={email} onChangeText={setEmail} />
+            <MyInput placeholder="Informe seu Nome" value={nome} onChangeText={setNome} />
+            <MyInput placeholder="Informe seu CPF" value={cpf} onChangeText={setCpf} />
+            <MyInput placeholder="Informe seu E-mail" value={email} onChangeText={setEmail} />
 
             <MyButton onPress={ () => nextPage() } placeholder="Proximo" />
         </View>
