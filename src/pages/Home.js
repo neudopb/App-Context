@@ -17,10 +17,10 @@ export function Home({ navigation }){
     }
 
     return (
-        <View style={GlobalStyle.container}>
-            <MyInput placeholder="Informe seu Nome" value={nome} onChangeText={setNome} />
-            <MyInput placeholder="Informe seu CPF" value={cpf} onChangeText={setCpf} keyboardType="numeric" />
-            <MyInput placeholder="Informe seu E-mail" value={email} onChangeText={setEmail} />
+        <View style={ GlobalStyle.container }>
+            <MyInput placeholder="Informe seu Nome" value={ nome } onChangeText={ setNome } />
+            <MyInput placeholder="Informe seu CPF" value={ cpf } onChangeText={ setCpf } keyboardType="numeric" />
+            <MyInput placeholder="Informe seu E-mail" value={ email } onChangeText={ setEmail } />
 
             <MyButton onPress={ () => nextPage() } placeholder="Proximo" />
         </View>

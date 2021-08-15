@@ -3,8 +3,8 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 export function MyButton(props) {
     return (
-        <TouchableOpacity onPress={props.onPress} style={styles.btn}>
-            <Text style={styles.txt}>{props.placeholder}</Text>
+        <TouchableOpacity onPress={ props.onPress } style={ styles.btn }>
+            <Text style={ styles.txt }>{ props.placeholder }</Text>
         </TouchableOpacity>
     );
 };
@@ -23,5 +23,5 @@ const styles = StyleSheet.create({
     txt: {
         fontSize: 18,
         fontWeight: 'bold',
-    }
+    },
 });
